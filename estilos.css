@@ -172,16 +172,20 @@ nav #publicar_nav a{
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
-
+/*SECTION*/
 #contenido{
 	margin: 1em;
-	margin-bottom: 50px;
-	position: relative;
+	/*margin-bottom: 50px;*/
+	/*position: relative;*/
 }
-
+/*ARTICLE*/
 #contenido .item{
 	background: white;
 	border-bottom: 3px #22BCE0 solid;
+	margin-bottom: 3em;/**Q TOME SEPARACIÓN LA VOTACIÓN DEL ART */
+	min-height: 128px;/*PARA Q LA LINEA AZUL NO SE PONGA DEBAJO DE LA IMAGÉN*/
+	position: relative;/*EL ART ESTARÁ COMO SI FUESE STATIC*/
+	/*top: 100px;*/
 }
 
 #contenido .item p{
@@ -219,8 +223,14 @@ NO ESTÁN ALINEADOS AL MISMO NIVEL NO USAR DISPLAY INLINE-BLOCK MEJOR FLOAT*/
 }
 
 #contenido .item .votacion{
-	border: 0.2em #646464 solid;
+	background: white;
+	/*border: 0.2em solid #646464;*/
+	border-radius: 0 0 0.5em 0.5em;/*EZQSUPIZQ EZQSUPDER EZQINFDER EZQINFIZQ*/
+	margin: 3px 0 0 0 ;/*PARA Q NO TAPE LINEA AZUL*/
+	padding: 0.5em 0;
 	position: absolute;
+	text-align: center;
+	top: 100%;
 	width: 96px;
 }
 
